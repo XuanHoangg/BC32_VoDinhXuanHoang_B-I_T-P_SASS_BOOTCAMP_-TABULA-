@@ -1,0 +1,8 @@
+@mixin subMenuStyle($position, $width, $height, $bg-color, $bottom, $left) {
+    position: $position;
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    bottom: $bottom;
+    left: $left;
+}

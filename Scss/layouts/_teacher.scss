@@ -1,0 +1,219 @@
+#teacher {
+    margin-top: 35px;
+    // background-color: $color-violet;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.post-card {
+    width: 1200px;
+    max-width: calc(100% - 60px);
+    margin: 0 auto;
+
+    .card-item {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;
+
+    }
+
+    & .card {
+        max-width: 25%;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        transition: all 0.3s;
+
+        .photo {
+            overflow: hidden;
+        }
+
+
+        img {
+            max-width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transition: all 1s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+
+        }
+
+        .card-body {
+            .card-title {
+                font-size: $font-small;
+                font-weight: $font-weight-700;
+                color: $color-purple;
+            }
+
+            .card-name {
+                font-weight: $font-weight-700;
+                font-family: "Montserrat", Arial, Helvetica, sans-serif;
+            }
+
+            .text {
+                font-weight: $font-weight-400;
+            }
+        }
+    }
+
+    & .card:hover {
+        box-shadow: 0 20px 30px 0 rgb(181, 172, 200);
+    }
+}
+
+@media (max-width:992px) {
+    .post-card {
+        padding-right: 40px;
+
+        & .card-item {
+            display: grid;
+            grid-template-columns: 45% 45%;
+            max-width: 100%;
+            // width: 992px;
+
+            & .card {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .post-card {
+
+        & .card-item {
+            display: grid;
+            grid-template-columns: auto;
+
+            & .card {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:1355px) {
+    .bg-wave {
+
+        top: -100px !important;
+
+    }
+}
+
+@media (max-width:1232px) {
+    .bg-wave {
+
+        top: -80px !important;
+
+    }
+}
+
+@media (max-width:1120px) {
+    .bg-wave {
+
+        top: -60px !important;
+
+    }
+}
+
+@media (max-width:988px) {
+    .bg-wave {
+
+        top: -40px !important;
+
+    }
+}
+
+@media (max-width:872px) {
+    .bg-wave {
+
+        top: -20px !important;
+    }
+}
+
+
+
+@media (max-width:784px) {
+    .bg-wave {
+
+        top: -10px !important;
+
+    }
+}
+
+@media (max-width:690px) {
+    .bg-wave {
+
+        top: 0 !important;
+
+    }
+}
+
+@media (max-width:622px) {
+    .bg-wave {
+
+        top: 10px !important;
+
+    }
+}
+
+@media (max-width:561px) {
+    .bg-wave {
+
+        top: 20px !important;
+
+    }
+}
+
+@media (max-width:497px) {
+    .bg-wave {
+
+        top: 30px !important;
+
+    }
+}
+
+@media (max-width:441px) {
+    .bg-wave {
+
+        top: 40px !important;
+
+    }
+}
+
+@media (max-width:400px) {
+    .bg-wave {
+
+        top: 45px !important;
+
+    }
+}
+
+.bg-wave-white {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    bottom: -100px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.bg-wave {
+    position: absolute;
+    width: 100%;
+    top: -120px;
+
+    img {
+        width: 100%;
+    }
+}

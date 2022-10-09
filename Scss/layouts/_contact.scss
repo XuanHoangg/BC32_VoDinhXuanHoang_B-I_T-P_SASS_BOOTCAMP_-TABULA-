@@ -1,0 +1,236 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    position: relative;
+
+    .contact_inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    & .form {
+        box-shadow: 0 0 10px 0 rgb(232 232 239);
+        position: relative;
+        padding: 0 30px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        border-radius: 15px;
+        z-index: 1;
+        background-color: $color-while;
+        // background-color: red;
+
+        h2 {
+            font-size: $font-x-large;
+            font-weight: $font-weight-700;
+        }
+    }
+
+    .bg-contact {
+        width: 100%;
+        position: absolute;
+        bottom: -33px;
+        z-index: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.info {
+    .info_contact {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+
+        .name,
+        .email {
+            position: relative;
+
+            i {
+                position: absolute;
+                top: 16px;
+                left: 15px;
+                color: $color-purple;
+            }
+
+            input {
+                border: 2px solid #EBEBEB;
+                border-radius: 25px;
+                height: 45px;
+                padding-left: 40px;
+                padding-right: 10px;
+                width: 160px;
+                transition: all 1s;
+            }
+
+            input:focus {
+                border: 2px solid #C7C7C7;
+                outline: none;
+            }
+
+            input::placeholder {
+                font-size: $font-small;
+            }
+        }
+    }
+
+    .select {
+        position: relative;
+        margin-top: 20px;
+
+
+        i {
+            position: absolute;
+            top: 16px;
+            left: 15px;
+            color: $color-purple;
+        }
+
+        #arrow_down {
+            left: auto;
+            right: 20px;
+            z-index: 0;
+        }
+
+        select {
+            border: 2px solid #EBEBEB;
+            border-radius: 25px;
+            height: 45px;
+            padding-left: 40px;
+            padding-right: 10px;
+            width: 100%;
+            transition: all 1s;
+            font-size: $font-small;
+            position: relative;
+            z-index: 3;
+            background-color: transparent;
+
+
+            option {
+                font-size: $font-small;
+
+            }
+        }
+
+        select:focus {
+            border: 2px solid #C7C7C7;
+            outline: none;
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+        }
+
+    }
+
+    .text-area {
+        margin-top: 20px;
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 16px;
+            left: 15px;
+            color: $color-purple;
+        }
+
+        textarea {
+            border: 2px solid #EBEBEB;
+            border-radius: 25px;
+            padding-top: 10px;
+            padding-left: 40px;
+            padding-right: 10px;
+            width: 100%;
+            transition: all 1s;
+            font-size: $font-small;
+        }
+
+        textarea:focus {
+            border: 2px solid #C7C7C7;
+            outline: none;
+        }
+    }
+
+    .btn-contact {
+        margin-top: 40px;
+        width: 150px;
+    }
+
+}
+
+@media (max-width:992px) {
+    #contact {
+        display: block;
+
+        .form {
+            width: 700px;
+            margin: 30px auto;
+
+            .name {
+                width: 49%;
+
+                input {
+                    width: 100%;
+                }
+            }
+
+            .email {
+                width: 49%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        .bg-contact {
+            bottom: -5px;
+        }
+
+    }
+
+    footer {
+        margin-top: -28px !important;
+    }
+}
+
+@media (max-width:780px) {
+    .form {
+        width: 600px;
+    }
+
+    .info_contact {
+        display: block !important;
+
+        .name {
+            width: 100% !important;
+        }
+
+        .email {
+            width: 100% !important;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width:710px) {
+    .form {
+        width: 500px !important;
+    }
+}
+
+@media (max-width:500px) {
+    .form {
+        width: 300px !important;
+    }
+
+    .contact_inner {
+        width: 100%;
+    }
+}
